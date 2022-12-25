@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="simple calculator"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/etfirstvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter First Value"
+        android:inputType="number"/>
+
+
+    <EditText
+        android:id="@+id/etsecondvalue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Enter Second Value"
+        android:inputType="number"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnsadd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ADD"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/grey"/>
+        <Button
+            android:id="@+id/btnsssub"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SUB"
+            android:layout_marginHorizontal="10dp"
+            android:backgroundTint="@color/grey"/>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnMultily"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Multipy"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/grey"/>
+            <Button
+                android:id="@+id/btnsDevide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Divide"
+                android:layout_marginHorizontal="10dp"
+                android:backgroundTint="@color/grey"/>
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
